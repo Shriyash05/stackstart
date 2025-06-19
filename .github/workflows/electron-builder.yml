@@ -25,7 +25,7 @@ jobs:
         run: npm run dist
         working-directory: language-installer-app
       - name: Upload dist artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist-${{ matrix.os }}
           path: language-installer-app/dist/ 
