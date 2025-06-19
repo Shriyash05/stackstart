@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Installer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Stack Start Logo" style="width:80px;display:block;margin:0 auto 16px auto;" />
+    <h1 style="text-align:center;">Stack Start</h1>
+    <div class="section">
+      <label for="os">Select your OS:</label>
+      <select id="os">
+        <option value="windows">Windows</option>
+        <option value="macos">macOS</option>
+        <option value="linux">Linux</option>
+      </select>
+    </div>
+    <div class="section">
+      <label>Select language to install:</label>
+      <div class="language-buttons">
+        <button class="lang-btn" data-lang="python">Install Python</button>
+        <button class="lang-btn" data-lang="c">Install C</button>
+        <button class="lang-btn" data-lang="cpp">Install C++</button>
+        <button class="lang-btn" data-lang="java">Install Java</button>
+        <button class="lang-btn" data-lang="go">Install Go</button>
+        <button class="lang-btn" data-lang="rust">Install Rust</button>
+        <button class="lang-btn" data-lang="nodejs">Install Node.js</button>
+        <button class="lang-btn" data-lang="ruby">Install Ruby</button>
+        <button class="lang-btn" data-lang="php">Install PHP</button>
+        <button class="lang-btn" data-lang="dotnet">Install .NET (C#)</button>
+        <button class="lang-btn" data-lang="swift">Install Swift</button>
+        <button class="lang-btn" data-lang="kotlin">Install Kotlin</button>
+        <button class="lang-btn" data-lang="perl">Install Perl</button>
+        <button class="lang-btn" data-lang="r">Install R</button>
+      </div>
+    </div>
+    <div class="section">
+      <pre id="output" class="output"></pre>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html> 
